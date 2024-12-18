@@ -1,12 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Button,
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
+import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 
 import {
   GlobeEuropeAfricaIcon,
@@ -16,7 +11,6 @@ import {
 } from "@heroicons/react/24/solid";
 
 import CategoryCard from "@/components/category-card";
-
 
 const CATEGORIES = [
   {
@@ -49,10 +43,21 @@ export function CoursesCategories() {
   return (
     <section className="container mx-auto px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
-        <Typography variant="h2" color="blue-gray" className="my-3">
+        <Typography
+          variant="h2"
+          color="blue-gray"
+          className="my-3"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           Courses Categories
         </Typography>
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        <Typography
+          variant="lead"
+          className="!text-gray-500 lg:w-6/12"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           A comprehensive selection of courses designed to empower you with the
           skills you need to thrive in the dynamic world of web development.
         </Typography>
@@ -61,22 +66,41 @@ export function CoursesCategories() {
         <Card
           color="gray"
           className="relative grid h-full w-full place-items-center overflow-hidden text-center"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
-          <CardBody className="relative w-full">
+          <CardBody
+            className="relative w-full"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             <Typography color="white" className="text-xs font-bold opacity-50">
               HTML, CSS & Javascript
             </Typography>
-            <Typography variant="h4" className="mt-9" color="white">
+            <Typography
+              variant="h4"
+              className="mt-9"
+              color="white"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Web Development Intro
             </Typography>
             <Typography
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
             >
               Ready to start your web development journey?
             </Typography>
-            <Button size="sm" color="white">
+            <Button
+              size="sm"
+              color="white"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Enroll Now
             </Button>
           </CardBody>

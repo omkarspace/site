@@ -12,10 +12,10 @@ import {
 interface CertificateCardProps {
   studentName: string;
   courseName: string;
-  completionDate: string;
+  completionDate?: string;
   certificateId: string;
-  img: string;
-  issueDate: string;
+  img?: string;
+  issueDate?: string;
 }
 
 export function CertificateCard({
@@ -29,15 +29,17 @@ export function CertificateCard({
   return (
     <Card className="border rounded-lg shadow-md">
       {/* Card Header with Certificate Image */}
-      {/* <CardHeader className="h-72 overflow-hidden rounded-t-lg">
-        <Image
-          width={768}
-          height={768}
-          src={img}
-          alt={`${courseName} certificate preview`}
-          className="h-full w-full object-cover"
-        />
-      </CardHeader> */}
+      {img && (
+        <CardHeader className="h-72 overflow-hidden rounded-t-lg">
+          <Image
+            width={768}
+            height={768}
+            src={img}
+            alt={`${courseName} certificate preview`}
+            className="h-full w-full object-cover"
+          />
+        </CardHeader>
+      )}
 
       {/* Card Body with Certificate Details */}
       <CardBody>
@@ -71,32 +73,39 @@ export function CertificateCard({
           </div>
 
           {/* Dates Section */}
-          <div className="flex justify-between gap-6">
-            <div>
-              <Typography
-                variant="small"
-                className="font-normal text-gray-500"
-              >
-                Completion Date
-              </Typography>
-              <Typography variant="small" color="blue-gray">
-                {completionDate}
-              </Typography>
+          {(completionDate || issueDate) && (
+            <div className="flex justify-between gap-6">
+              {completionDate && (
+                <div>
+                  <Typography
+                    variant="small"
+                    className="font-normal text-gray-500"
+                  >
+                    Completion Date
+                  </Typography>
+                  <Typography variant="small" color="blue-gray">
+                    {completionDate}
+                  </Typography>
+                </div>
+              )}
+              {issueDate && (
+                <div>
+                  <Typography
+                    variant="small"
+                    className="font-normal text-gray-500"
+                  >
+                    Issue Date
+                  </Typography>
+                  <Typography variant="small" color="blue-gray">
+                    {issueDate}
+                  </Typography>
+                </div>
+              )}
             </div>
-            <div>
-              <Typography
-                variant="small"
-                className="font-normal text-gray-500"
-              >
-                Issue Date
-              </Typography>
-              <Typography variant="small" color="blue-gray">
-                {issueDate}
-              </Typography>
-            </div>
-          </div>
+          )}
 
           {/* Download Button */}
+          {/* Uncomment when implementing download functionality */}
           {/* <Button variant="outlined" fullWidth>
             Download Certificate
           </Button> */}

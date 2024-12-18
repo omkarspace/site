@@ -10,11 +10,11 @@ import {
   RectangleStackIcon,
   UserCircleIcon,
   CommandLineIcon,
-  Squares2X2Icon,
-  XMarkIcon,
   Bars3Icon,
+  XMarkIcon,
 } from "@heroicons/react/24/solid";
 
+// Define NAV_MENU
 const NAV_MENU = [
   {
     name: "Page",
@@ -31,6 +31,7 @@ const NAV_MENU = [
   },
 ];
 
+// NavItem Component
 interface NavItemProps {
   children: React.ReactNode;
   href?: string;
@@ -46,6 +47,7 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
+        placeholder="" // Add placeholder to satisfy TypeScript
       >
         {children}
       </Typography>
@@ -53,6 +55,7 @@ function NavItem({ children, href }: NavItemProps) {
   );
 }
 
+// Navbar Component
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
 
@@ -76,8 +79,12 @@ export function Navbar() {
           className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
         >
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
-              VectorLab
+            <Typography
+              color="blue-gray"
+              className="text-lg font-bold"
+              placeholder="" // Add placeholder to satisfy TypeScript
+            >
+              Vector India
             </Typography>
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -88,12 +95,13 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button variant="text">Log in</Button>
-              <a
-                href="https://www.material-tailwind.com/blocks"
-                target="_blank"
-              >
-                <Button color="gray">Blocks</Button>
+              <Button variant="text" placeholder="">
+                Log in
+              </Button>
+              <a href="https://www.material-tailwind.com/blocks" target="_blank">
+                <Button color="gray" placeholder="">
+                  Blocks
+                </Button>
               </a>
             </div>
             <IconButton
@@ -101,6 +109,7 @@ export function Navbar() {
               color="gray"
               onClick={handleOpen}
               className="ml-auto inline-block lg:hidden"
+              placeholder="" // Add placeholder to satisfy TypeScript
             >
               {open ? (
                 <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -120,12 +129,16 @@ export function Navbar() {
                 ))}
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text">Log in</Button>
+                <Button variant="text" placeholder="">
+                  Log in
+                </Button>
                 <a
                   href="https://www.material-tailwind.com/blocks"
                   target="_blank"
                 >
-                  <Button color="gray">blocks</Button>
+                  <Button color="gray" placeholder="">
+                    blocks
+                  </Button>
                 </a>
               </div>
             </div>
