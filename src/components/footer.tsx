@@ -73,7 +73,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <Typography
+        {/* <Typography
           color="blue-gray"
           className="md:text-center mt-16 font-normal !text-gray-700"
         >
@@ -86,7 +86,7 @@ export function Footer() {
             Creative Tim
           </a>
           .
-        </Typography>
+        </Typography> */}
       </div>
     </footer>
   );
