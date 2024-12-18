@@ -37,6 +37,7 @@ export function CertificateCard({
             src={img}
             alt={`${courseName} certificate preview`}
             className="h-full w-full object-cover"
+            placeholder={'cdc'}
           />
         </CardHeader>
       )}
@@ -50,6 +51,7 @@ export function CertificateCard({
               variant="small"
               color="blue"
               className="mb-1 font-medium text-gray-500"
+              placeholder={'cdc'}
             >
               Certificate ID
             </Typography>

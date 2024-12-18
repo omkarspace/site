@@ -82,7 +82,7 @@ export function Navbar() {
             <Typography
               color="blue-gray"
               className="text-lg font-bold"
-              placeholder="" // Add placeholder to satisfy TypeScript
+              placeholder={'cdc'}
             >
               Vector India
             </Typography>
