@@ -8,8 +8,8 @@ function TESTIMONIAL() {
   return (
     <section className="px-8 py-40">
       <div className="container mx-auto">
-        <Card color="transparent" shadow={false} className="">
-          <CardBody className="col-span-full gap-10 place-items-center overflow-visible grid grid-cols-1 lg:grid-cols-4">
+        <Card color="transparent" shadow={false} className="" {...({} as any)}>
+          <CardBody className="col-span-full gap-10 place-items-center overflow-visible grid grid-cols-1 lg:grid-cols-4" {...({} as any)}>
             <div className="w-full xl:w-[600px] flex items-center overflow-hidden rounded-xl justify-center col-span-2 h-full">
               <Image
                 width={768}
@@ -20,30 +20,30 @@ function TESTIMONIAL() {
               />
             </div>
             <div className="col-span-2 w-full">
-              <Typography variant="h6" color="blue" className="mb-4">
+              <Typography variant="h6" color="blue" className="mb-4" {...({} as any)}>
                 ONLINE COURSE
               </Typography>
               <Typography
                 variant="h3"
                 color="blue-gray"
-                className="mb-4 font-bold"
+                className="mb-4 font-bold" {...({} as any)}
               >
                 Full-Stack Web Development
               </Typography>
-              <Typography className="mb-1 w-full font-normal !text-gray-500">
+              <Typography className="mb-1 w-full font-normal !text-gray-500" {...({} as any)}>
                 Become a versatile developer by combining frontend and backend
                 skills. Build complete web applications from start to finish.
               </Typography>
               <div className="grid mb-4">
                 <div className="flex items-center gap-2">
                   <span className="h-1 w-1 bg-gray-500 rounded-full" />
-                  <Typography className="w-full font-normal !text-gray-500">
+                  <Typography className="w-full font-normal !text-gray-500" {...({} as any)}>
                     International course collection in 10 languages
                   </Typography>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="h-1 w-1 bg-gray-500 rounded-full" />
-                  <Typography className="w-full font-normal !text-gray-500">
+                  <Typography className="w-full font-normal !text-gray-500" {...({} as any)}>
                     Certified include
                   </Typography>
                 </div>
@@ -54,14 +54,16 @@ function TESTIMONIAL() {
                   src="/image/avatar3.jpg"
                   alt="spotify"
                   size="md"
+                  {...({} as any)}
                 />
                 <div>
-                  <Typography variant="h6" color="blue-gray" className="mb-0.5">
+                  <Typography variant="h6" color="blue-gray" className="mb-0.5" {...({} as any)}>
                     Otto Gonzalez
                   </Typography>
                   <Typography
                     variant="small"
                     className="font-normal !text-gray-500"
+                    {...({} as any)}
                   >
                     Senior Designer @company.com
                   </Typography>

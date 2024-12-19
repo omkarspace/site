@@ -47,6 +47,7 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
+        {...({} as any)}
         placeholder="" // Add placeholder to satisfy TypeScript
       >
         {children}
@@ -76,13 +77,13 @@ export function Navbar() {
         <MTNavbar
           blurred
           color="white"
-          className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
+          className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"{...({} as any)}
         >
           <div className="flex items-center justify-between">
             <Typography
               color="blue-gray"
               className="text-lg font-bold"
-              placeholder={'cdc'}
+              placeholder={'cdc'}{...({} as any)}
             >
               Vector India
             </Typography>
@@ -95,11 +96,11 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button variant="text" placeholder="">
+              <Button variant="text" placeholder=""{...({} as any)}>
                 Log in
               </Button>
               <a href="https://www.material-tailwind.com/blocks" target="_blank">
-                <Button color="gray" placeholder="">
+                <Button color="gray" placeholder=""{...({} as any)}>
                   Blocks
                 </Button>
               </a>
@@ -110,6 +111,7 @@ export function Navbar() {
               onClick={handleOpen}
               className="ml-auto inline-block lg:hidden"
               placeholder="" // Add placeholder to satisfy TypeScript
+              {...({} as any)}
             >
               {open ? (
                 <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -129,14 +131,14 @@ export function Navbar() {
                 ))}
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text" placeholder="">
+                <Button variant="text" placeholder=""{...({} as any)}>
                   Log in
                 </Button>
                 <a
                   href="https://www.material-tailwind.com/blocks"
                   target="_blank"
                 >
-                  <Button color="gray" placeholder="">
+                  <Button color="gray" placeholder=""{...({} as any)}>
                     blocks
                   </Button>
                 </a>

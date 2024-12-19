@@ -40,12 +40,13 @@ export function OutImpressiveStats() {
     <section className="px-8 pt-60">
       <div className="container mx-auto text-center lg:text-left">
         <div className="grid place-items-center text-center">
-          <Typography variant="h2" color="blue-gray" className="mb-2 mt-24 text-4xl">
+          <Typography variant="h2" color="blue-gray" className="mb-2 mt-24 text-4xl" {...({} as any)}>
             Explore Our Impressive Stats
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-12 w-full !text-gray-500 lg:w-5/12"
+            {...({} as any)}
           >
             We take pride in our commitment to excellence and our dedication to
             your success.
