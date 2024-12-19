@@ -29,7 +29,7 @@ export function CertificateCard({
   return (
     <Card className="border rounded-lg shadow-md" {...({} as any)}>
       {/* Card Header with Certificate Image */}
-      {img && (
+      {/* {img && (
         <CardHeader className="h-72 overflow-hidden rounded-t-lg" {...({} as any)}>
           <Image
             width={768}
@@ -40,7 +40,7 @@ export function CertificateCard({
             
           />
         </CardHeader>
-      )}
+      )} */}
 
       {/* Card Body with Certificate Details */}
       <CardBody {...({} as any)}>

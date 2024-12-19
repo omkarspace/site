@@ -46,7 +46,7 @@ function NavItem({ children, href }: NavItemProps) {
         target={href ? "_blank" : "_self"}
         variant="paragraph"
         color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
+        className="flex items-center gap-2 font-medium text-light-blue-900"
         {...({} as any)}
         placeholder="" // Add placeholder to satisfy TypeScript
       >
