@@ -49,7 +49,7 @@ export function CoursesCategories() {
           className="my-3"
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
-          placeholder={'cdc'}
+          placeholder={"cdc"}
         >
           Courses Categories
         </Typography>
@@ -58,7 +58,7 @@ export function CoursesCategories() {
           className="!text-gray-500 lg:w-6/12"
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
-          placeholder={'cdc'}
+          placeholder={"cdc"}
         >
           A comprehensive selection of courses designed to empower you with the
           skills you need to thrive in the dynamic world of web development.
@@ -70,28 +70,26 @@ export function CoursesCategories() {
           className="relative grid h-full w-full place-items-center overflow-hidden text-center"
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
-          placeholder={'cdc'}
-          
-          
-
+          placeholder={"cdc"}
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
           <CardBody
             className="relative w-full"
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
-            placeholder={'cdc'}
+            placeholder={"cdc"}
           >
-            <Typography color="white" className="text-xs font-bold opacity-50" >
+            {/* <Typography color="white" className="text-xs font-bold opacity-50" >
               HTML, CSS & Javascript
-            </Typography>
+            </Typography> */}
+
             <Typography
               variant="h4"
               className="mt-9"
               color="white"
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
-              placeholder={'cdc'}
+              placeholder={"cdc"}
             >
               Web Development Intro
             </Typography>
@@ -100,7 +98,7 @@ export function CoursesCategories() {
               className="mt-4 mb-14 font-normal opacity-50"
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
-              placeholder={'cdc'}
+              placeholder={"cdc"}
             >
               Ready to start your web development journey?
             </Typography>
@@ -109,7 +107,7 @@ export function CoursesCategories() {
               color="white"
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
-              placeholder={'cdc'}
+              placeholder={"cdc"}
             >
               Enroll Now
             </Button>
